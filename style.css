@@ -1,0 +1,129 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav {
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+li {
+    display: inline-block;
+    padding: 0 15px;
+    color: black;
+}
+li.n{ 
+    display: flex;
+    align-items: center;
+}
+li.n img{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+li.m{
+    display: flex;
+    align-items: center;
+}
+li.m img{
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  justify-content:left;
+}
+li.k{
+    display: flex;
+    align-items: center;
+}
+li.k img{
+ vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+.geor{
+    font-size: 14px;
+    padding: 14px;
+    border:none;
+    cursor: pointer;
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+}
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .show{
+    display: block;
+  }
+li.a{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+li.b{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+li.c{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+li.l{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: blue;
+}
+
+@media (max-width: 768px) {
+    li.a ,li.b,li.c {
+        display: none; 
+    }
+    ul {
+        grid-template-columns: repeat(5, auto);
+        gap: 10px;
+    }
+}
+@media (max-width: 480px) {
+    li.n span,li.a ,li.b,li.c,li.k{
+        display: none; 
+    }
+    ul {
+        grid-template-columns: repeat(5, auto);
+        gap: 10px;
+    }
+}
+
+
+.a :active{
+
+}
